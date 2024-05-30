@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример лендинга под Инсту</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="Shortcut icon" href="/pages/assets/favicon.png">
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5BX69ZS');</script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+
+    <main>
+
+        <h1>Как фрилансеру рассчитать стоимость проекта, чтобы не прогореть
+        </h1>
+        <p>Когда вы озвучиваете клиенту стоимость своих услуг, не забудьте заложить туда налоги, амортизацию техники, на
+            которой работаете, лицензионные программы, отпуск с больничными и прочие расходы. Наш пошаговый алгоритм
+            поможет учесть издержки и не остаться внакладе.
+        </p>
+
+        <div class="box">За работу не заплатили, а в рекламе этого бренда теперь играет вторичная ерунда с бубном,
+            свистом и укулеле. Нет ничего хуже, чем рекламная музыка с бубном, свистом и укулеле.
+        </div>
+        <div class="center"><a href="#" class="btn-1">Нажми меня</a><a href="#" class="btn-1">Нажми меня 2</a></div>
+        <div class="center"><a href="#" class="btn-2">Нажми меня</a><a href="#" class="btn-2">Нажми меня 2</a></div>
+
+        <ul>
+            <li>First</li>
+            <li>ses</li>
+            <li>esf</li>
+            <li>sefs</li>
+            <li>sfe</li>
+        </ul>
+        <h2>Второй заголовок</h2>
+        <p>Тут много текста типа абзац</p>
+        <h2>Третий заголовок</h2>
+        <ol>
+            <li>sd</li>
+            <li>sd</li>
+            <li>sd</li>
+        </ol>
+
+        <div class="insta-card"><img src="/pages/assets/ava.jpg" class="avatar" width="150px" alt="">
+            <div class="profile-title">Qazaqbiz <img src="/pages/assets/verif.svg" width="25px" alt=""></div>
+            <div class="profile-subtitle">Text</div>
+            <a href="#" class="btn-1">Подпишись</a>
+        </div>
+
+        <div id="toc-container">
+            <div id="toc-burger">&#9776;</div>
+            <div id="toc-panel">
+                <div id="toc-close">&times;</div>
+                <div id="toc-content">
+                    <h3>Навигация:</h3>
+                    <!-- TOC will be generated here -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BX69ZS" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <script>document.addEventListener('DOMContentLoaded', function () {
+            const h2Elements = document.querySelectorAll('h2');
+
+            if (h2Elements.length > 1) {
+                const tocBurger = document.getElementById('toc-burger');
+                const tocPanel = document.getElementById('toc-panel');
+                const tocClose = document.getElementById('toc-close');
+                const tocContent = document.getElementById('toc-content');
+
+                // Show the burger menu
+                tocBurger.style.display = 'block';
+
+                // Create the TOC
+                const ul = document.createElement('ul');
+                h2Elements.forEach((h2, index) => {
+                    const id = `section-${index}`;
+                    h2.id = id;
+
+                    const li = document.createElement('li');
+                    const a = document.createElement('a');
+                    a.href = `#${id}`;
+                    a.textContent = h2.textContent;
+
+                    li.appendChild(a);
+                    ul.appendChild(li);
+                });
+                tocContent.appendChild(ul);
+
+                // Burger menu click event
+                tocBurger.addEventListener('click', function () {
+                    tocPanel.style.right = '0';
+                });
+
+                // Close button click event
+                tocClose.addEventListener('click', function () {
+                    tocPanel.style.right = '-250px';
+                });
+            }
+        });
+
+    </script>
+</body>
+
+
+
+</html>

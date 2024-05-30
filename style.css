@@ -39,7 +39,7 @@ h4 {
 }
 
 h1 {
-  font-size: 1.2 rem;
+  font-size: 1.8rem;
   line-height: 1;
 }
 
@@ -214,8 +214,9 @@ ol {
   text-decoration: underline;
 }
 
-@media (max-width: 600px) {
-  .logo {
+@media (max-width: 700px) {
+  h1 {
+    font-size: 1.4rem;
   }
   main {
     width: 85%;
